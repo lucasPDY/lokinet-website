@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
+
 
 type Props = {
     children?: ReactNode
@@ -8,10 +7,10 @@ type Props = {
 }
 
 const Footer = () => (
-    <footer className='p-x-5'>
-        <hr />
+    <footer className="flex items-center justify-center bg-gray-200">
+        < hr />
         <span>This is the footer (Footer)</span>
-    </footer>
+    </footer >
 )
 
 export default Footer;
