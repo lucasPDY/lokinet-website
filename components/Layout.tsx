@@ -9,17 +9,24 @@ type Props = {
   title?: string
 }
 
-const Layout = ({ children, title = 'This is the default title' }: Props) => (
-  <div>
-    <Head>
-      <title>{title}</title>
-      <meta charSet="utf-8" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    </Head>
-    <Header />
-    {children}
-    <Footer />
-  </div>
-)
+const Layout = ({ children, title = 'Lokinet' }: Props) => {
+  const formattedTitle: string = `${title} | Anonymous Internet Access}`
+  return (
+    <div>
+      <Head>
+        <title>{formattedTitle}</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <Header />
+      <div
+        className="flex flex-col items-center "
+      >
+        {children}
+      </div>
+      <Footer />
+    </div>
+  )
+}
 
 export default Layout;

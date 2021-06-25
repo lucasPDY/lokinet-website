@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import Layout from '../components/Layout'
 
-const AboutPage = () => (
-  <Layout title="About">
-    <h1>About</h1>
-    <p>This is the about page</p>
+const Page404 = () => (
+  <Layout title="404">
+    <h1>404 Page Not Found</h1>
+    <p>This is the 404 page</p>
     <p>
       <Link href="/">
         <a>Go home</a>
@@ -13,4 +13,4 @@ const AboutPage = () => (
   </Layout>
 )
 
-export default AboutPage
+export default Page404
