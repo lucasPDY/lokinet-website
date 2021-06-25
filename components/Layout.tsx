@@ -19,8 +19,9 @@ const Layout = ({ children, title = 'Lokinet' }: Props) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header />
+      {/* Put Common CSS Across different pages here */}
       <div
-        className="flex flex-col items-center "
+        className="flex flex-col items-center py-5"
       >
         {children}
       </div>
