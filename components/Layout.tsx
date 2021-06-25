@@ -25,6 +25,10 @@ const Layout = ({ children, title = 'Lokinet' }: Props) => {
       >
         {children}
       </div>
+      <div className='flex justify-center h-40 pb-4'>
+        <h3>Work in progress</h3>
+        <img src='wip.png' />
+      </div>
       <Footer />
     </div>
   )
